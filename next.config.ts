@@ -1,8 +1,7 @@
-const withSerwist = require("@serwist/next").default({
-  swSrc: "app/sw.ts",
-  swDest: "public/sw.js",
-});
+import type { NextConfig } from "next";
 
-module.exports = withSerwist({
-  // Your existing Next.js config
-});
+const nextConfig: NextConfig = {
+  /* config options here */
+};
+
+export default nextConfig;
