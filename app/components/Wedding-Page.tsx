@@ -17,7 +17,7 @@ export default function ModernWeddingCountdown() {
   useEffect(() => {
     const timer = setInterval(() => {
       const now = new Date()
-      let todayEvent = events.find(event => 
+      const todayEvent = events.find(event => 
         event.date.toDateString() === now.toDateString()
       )
 
@@ -28,7 +28,7 @@ export default function ModernWeddingCountdown() {
         return
       }
 
-      let nextEvent = events.find(event => event.date > now)
+      const nextEvent = events.find(event => event.date > now)
 
       if (!nextEvent) {
         setCurrentEvent('All events have passed!')
@@ -71,7 +71,7 @@ export default function ModernWeddingCountdown() {
                 <div className="text-center mb-8">
                   <PartyPopper className="inline-block text-yellow-300 animate-bounce" size={48} />
                   <p className="text-2xl text-red-400 mt-4">Congratulations and best wishes! 😊</p>
-                  <p className='text-xl text-white mt-4'>Don't forget to click tons of picture and video. 📷 🎥</p>
+                  <p className='text-xl text-white mt-4'>Don't forget to click tons of picture and video.</p>
                 </div>
                 <div className="flex justify-center space-x-4">
                   <Heart className="text-pink-300 animate-pulse" size={24} />
