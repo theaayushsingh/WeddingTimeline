@@ -70,7 +70,7 @@ export default function ModernWeddingCountdown() {
                 </h1>
                 <div className="text-center mb-8">
                   <PartyPopper className="inline-block text-yellow-300 animate-bounce" size={48} />
-                  <p className="text-2xl text-red-400 mt-4">Congratulations and best wishes! 😊</p>
+                  <p className="text-2xl text-red-400 mt-4">Congratulations and best wishes!</p>
                   <p className='text-xl text-white mt-4'>Don't forget to click tons of picture and video.</p>
                 </div>
                 <div className="flex justify-center space-x-4">
