@@ -39,26 +39,26 @@ export default function ModernWeddingCountdown() {
     const updateCountdown = () => {
       try {
         const now = new Date()
-        console.log('Current date:', now.toISOString())
-        console.log('Events:', events)
+        // console.log('Current date:', now.toISOString())
+        // console.log('Events:', events)
 
-        let todayEvent = events.find(event => 
+        const todayEvent = events.find(event => 
           event.date.toDateString() === now.toDateString()
         )
 
         if (todayEvent) {
-          console.log('Today is an event day:', todayEvent.name)
+          // console.log('Today is an event day:', todayEvent.name)
           setCurrentEvent(todayEvent)
           setIsCelebrationDay(true)
-          let nextEventIndex = events.findIndex(e => e.name === todayEvent.name) + 1
+          const nextEventIndex = events.findIndex(e => e.name === todayEvent.name) + 1
           setNextEvent(nextEventIndex < events.length ? events[nextEventIndex] : null)
           return
         }
 
-        let next = events.find(event => event.date > now)
+        const next = events.find(event => event.date > now)
 
         if (!next) {
-          console.log('All events have passed')
+          // console.log('All events have passed')
           setCurrentEvent(events[events.length - 1])
           setNextEvent(null)
           setIsCelebrationDay(false)
@@ -66,9 +66,9 @@ export default function ModernWeddingCountdown() {
           return
         }
 
-        console.log('Next event:', next.name, 'on', next.date.toISOString())
+        // console.log('Next event:', next.name, 'on', next.date.toISOString())
         setCurrentEvent(next)
-        let nextEventIndex = events.indexOf(next) + 1
+        const nextEventIndex = events.indexOf(next) + 1
         setNextEvent(nextEventIndex < events.length ? events[nextEventIndex] : null)
         setIsCelebrationDay(false)
 
@@ -79,9 +79,9 @@ export default function ModernWeddingCountdown() {
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000)
 
         setCountdown({ days, hours, minutes, seconds })
-        console.log('Countdown updated:', { days, hours, minutes, seconds })
+        // console.log('Countdown updated:', { days, hours, minutes, seconds })
       } catch (err) {
-        console.error('Error updating countdown:', err)
+        // console.error('Error updating countdown:', err)
         setError('An error occurred while updating the countdown. Please refresh the page.')
       }
     }
