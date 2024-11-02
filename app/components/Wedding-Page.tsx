@@ -81,7 +81,7 @@ export default function ModernWeddingCountdown() {
         setCountdown({ days, hours, minutes, seconds })
         // console.log('Countdown updated:', { days, hours, minutes, seconds })
       } catch (err) {
-        // console.error('Error updating countdown:', err)
+        console.error('Error updating countdown:', err)
         setError('An error occurred while updating the countdown. Please refresh the page.')
       }
     }
