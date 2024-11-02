@@ -4,7 +4,7 @@ export const events = [
     { name: "Groom's Haldi", date: new Date('2024-11-25T00:00:00'), theme: 'haldi' },
     { name: 'Mehandi', date: new Date('2024-11-26T00:00:00'), theme: 'mehandi' },
     { name: 'Wedding', date: new Date('2024-11-27T00:00:00'), theme: 'wedding' },
-    { name: 'Reception', date: new Date('2024-11-28T00:00:00'), theme: 'reception' }
+    { name: 'Reception', date: new Date('2024-11-30T00:00:00'), theme: 'reception' }
   ] as const;
   
   export const theme = {
