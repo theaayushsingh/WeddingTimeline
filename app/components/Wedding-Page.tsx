@@ -100,7 +100,7 @@ export default function ModernWeddingCountdown() {
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-red-100 text-red-800 p-4">
+      <div className="min-h-screen flex items-center justify-center bg-red-100 text-red-800 p-4 overflow-x-hidden">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Error</h1>
           <p>{error}</p>
@@ -110,7 +110,7 @@ export default function ModernWeddingCountdown() {
   }
 
   return (
-    <div className={`min-h-screen flex flex-col items-center justify-center p-4 ${currentTheme.background}`}>
+    <div className={`min-h-screen flex flex-col items-center justify-center p-4 overflow-x-hidden ${currentTheme.background}`}>
       <h1 className="text-5xl font-bold mb-8 text-center">
         <span className={currentTheme.text}>Ayush</span> <span className={currentTheme.accent}>&</span> <span className={currentTheme.text}>Khushboo</span>
       </h1>
