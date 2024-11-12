@@ -1,7 +1,6 @@
 export const events = [
   { name: 'Tilak Ceremony', date: new Date('2024-11-21T00:00:00'), theme: 'tilak' },
-  { name: "Bride's Haldi", date: new Date('2024-11-23T00:00:00'), theme: 'haldi' },
-  { name: "Groom's Haldi", date: new Date('2024-11-25T00:00:00'), theme: 'haldi' },
+  { name: "Haldi", date: new Date('2024-11-25T00:00:00'), theme: 'haldi' },
   { name: 'Mehandi Ceremony', date: new Date('2024-11-26T00:00:00'), theme: 'mehandi' },
   { name: 'Wedding', date: new Date('2024-11-27T00:00:00'), theme: 'wedding' },
   { name: 'Reception', date: new Date('2024-11-30T00:00:00'), theme: 'reception' }
